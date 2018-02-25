@@ -3,6 +3,9 @@
 # that inherit from Lineage
 #
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/pixys/sepolicy/qcom/private
+
 BOARD_SEPOLICY_DIRS += \
     device/pixys/sepolicy/qcom
     device/pixys/sepolicy/qcom/common \
