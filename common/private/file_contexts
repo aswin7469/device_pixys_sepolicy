@@ -28,6 +28,9 @@
 /sys/devices/virtual/timed_output/vibrator/vtg_min u:object_r:sysfs_vibrator:s0
 /sys/devices/virtual/timed_output/vibrator/vtg_max u:object_r:sysfs_vibrator:s0
 
+# I/O Scheduler
+/sys/devices/.*/block/(dm-|mmcblk|sd)[a-z0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
+
 # OTA packages
 /data/pixysos_updates(/.*)?           u:object_r:ota_package_file:s0
 
