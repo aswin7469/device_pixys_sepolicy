@@ -23,11 +23,6 @@
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service         u:object_r:hal_fingerprint_default_exec:s0
 
-# Vibrator control
-/sys/devices/virtual/timed_output/vibrator/vtg_level u:object_r:sysfs_vibrator:s0
-/sys/devices/virtual/timed_output/vibrator/vtg_min u:object_r:sysfs_vibrator:s0
-/sys/devices/virtual/timed_output/vibrator/vtg_max u:object_r:sysfs_vibrator:s0
-
 # I/O Scheduler
 /sys/devices/.*/block/(dm-|mmcblk|sd)[a-z0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
 
@@ -36,4 +31,3 @@
 
 # Pocket judge
 /sys/kernel/pocket_judge(/.*)?	u:object_r:pocket_judge_sysfs:s0
-
