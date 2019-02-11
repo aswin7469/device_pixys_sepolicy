@@ -9,5 +9,8 @@ add_service(system_server, longshot_service)
 
 allow system_server adbroot_service:service_manager find;
 
+# Allow adb related properties to be set
+set_prop(system_server, adbtcp_prop)
+
 # Use HALs
 hal_client_domain(system_server, hal_lineage_fod)
