@@ -35,5 +35,6 @@ set_prop(recovery, lineage_recovery_prop)
 set_prop(recovery, system_prop)
 
 # Volume manager
+allow recovery proc_filesystems:file r_file_perms;
 allow recovery self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 ')
