@@ -22,6 +22,9 @@
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service         u:object_r:hal_fingerprint_default_exec:s0
 
+# HALs
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power@1\.2-service    u:object_r:hal_power_default_exec:s0
+
 # I/O Scheduler
 /sys/devices/.*/block/(dm-|mmcblk|sd)[a-z0-9]+/queue(/.*)? u:object_r:sysfs_io_sched_tuneable:s0
 
