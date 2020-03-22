@@ -1,4 +1,5 @@
 recovery_only(`
+<<<<<<< HEAD
 
 # XXX
 ##allow init rootfs:file write;
@@ -48,6 +49,8 @@ allow recovery sysfs_batteryinfo:dir search;
 r_dir_file(recovery, unencrypted_data_file)
 
 # setenforce
+=======
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
 userdebug_or_eng(`
 permissive recovery;
 ')

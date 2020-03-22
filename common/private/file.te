@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Pocket judge
 type pocket_judge_sysfs, fs_type, sysfs_type;
 
+=======
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
 type sysfs_io_sched_tuneable, fs_type, sysfs_type;
 type adbroot_data_file, file_type, data_file_type, core_data_file_type;

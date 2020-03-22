@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+type snap_app, domain, coredomain;
+
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
 app_domain(snap_app)
 net_domain(snap_app)
 
@@ -16,11 +21,21 @@ allow snap_app surfaceflinger_service:service_manager find;
 allow snap_app hidl_token_hwservice:hwservice_manager find;
 
 # Allow to read and execute camera app modules
+<<<<<<< HEAD
+=======
+typeattribute snap_app system_executes_vendor_violators;
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
 allow snap_app vendor_file:file { rx_file_perms };
 
 # Execute libraries from RenderScript cache
 allow snap_app app_data_file:file { rx_file_perms };
 
+<<<<<<< HEAD
+=======
+# Execute /system/bin/bcc
+allow snap_app rs_exec:file rx_file_perms;
+
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
 # Read memory info
 allow snap_app proc_meminfo:file r_file_perms;
 

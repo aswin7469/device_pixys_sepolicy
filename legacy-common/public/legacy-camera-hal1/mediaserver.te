@@ -4,3 +4,8 @@ add_hwservice(mediaserver, fwk_camera_hwservice)
 
 allow mediaserver { cameraproxy_service sensor_privacy_service }:service_manager find;
 allow mediaserver hal_camera_hwservice:hwservice_manager find;
+<<<<<<< HEAD
+=======
+
+hal_client_domain(mediaserver, hal_lineage_camera_motor)
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e

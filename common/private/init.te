@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 allow init sysfs_io_sched_tuneable:file { setattr w_file_perms };
 allow init sysfs_dm:dir relabelfrom;
 allow init sysfs_dm:file relabelfrom;
+=======
+allow init sysfs_dm:dir relabelfrom;
+allow init sysfs_dm:file relabelfrom;
+
+allow init {
+    sysfs_io_sched_tuneable
+}:file { setattr w_file_perms };
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e

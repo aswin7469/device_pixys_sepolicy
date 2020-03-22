@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 type pocket_service, system_api_service, system_server_service, service_manager_type;
 type longshot_service, system_api_service, system_server_service, service_manager_type;
 type adbroot_service,                   service_manager_type;
+=======
+type adbroot_service,                   service_manager_type;
+type lineage_audio_service, system_api_service, system_server_service, service_manager_type;
+type lineage_hardware_service, system_api_service, system_server_service, service_manager_type;
+type lineage_performance_service, system_api_service, system_server_service, service_manager_type;
+type lineage_profile_service, system_api_service, system_server_service, service_manager_type;
+type lineage_weather_service, system_api_service, system_server_service, service_manager_type;
+type longshot_service, system_api_service, system_server_service, service_manager_type;
+>>>>>>> 25a9db9e434122ea56ab28fb94f49558b12b4c7e
